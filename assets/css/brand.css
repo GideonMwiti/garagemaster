@@ -1,0 +1,294 @@
+/* garage_management_system/assets/css/brand.css */
+:root {
+    --brand-primary: #00A8CE;
+    --brand-secondary: #FFA629;
+    --brand-accent: #7A2048;
+    --brand-dark: #0E2033;
+    --brand-muted: #6B7280;
+    --brand-light: #F8F9FA;
+    --brand-success: #28A745;
+    --brand-danger: #DC3545;
+    --brand-warning: #FFC107;
+    --brand-info: #17A2B8;
+}
+
+* {
+    font-family: 'Montserrat', 'Poppins', Arial, sans-serif !important;
+}
+
+/* Preserve Font Awesome icon fonts (overrides universal font rule) */
+.fa,
+.fas,
+.fa-solid,
+.fa-regular,
+.far,
+.fa-light,
+.fal,
+.fa-thin,
+.fa-duotone {
+    font-family: "Font Awesome 6 Free" !important;
+}
+
+.fas,
+.fa-solid {
+    font-weight: 900 !important;
+}
+
+.far,
+.fa-regular {
+    font-weight: 400 !important;
+}
+
+.fab,
+.fa-brands {
+    font-family: "Font Awesome 6 Brands" !important;
+    font-weight: 400 !important;
+}
+
+/* Text Colors */
+.text-primary { color: var(--brand-primary) !important; }
+.text-secondary { color: var(--brand-secondary) !important; }
+.text-accent { color: var(--brand-accent) !important; }
+.text-dark { color: var(--brand-dark) !important; }
+.text-muted { color: var(--brand-muted) !important; }
+
+/* Background Colors */
+.bg-primary { background-color: var(--brand-primary) !important; }
+.bg-secondary { background-color: var(--brand-secondary) !important; }
+.bg-accent { background-color: var(--brand-accent) !important; }
+.bg-dark { background-color: var(--brand-dark) !important; }
+.bg-light { background-color: var(--brand-light) !important; }
+
+/* Button Styles */
+.btn-primary {
+    background-color: var(--brand-primary);
+    border-color: var(--brand-primary);
+    color: white;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    background-color: #0097b9;
+    border-color: #0097b9;
+}
+
+.btn-secondary {
+    background-color: var(--brand-secondary);
+    border-color: var(--brand-secondary);
+    color: white;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary:active {
+    background-color: #e6951e;
+    border-color: #e6951e;
+}
+
+.btn-outline-primary {
+    color: var(--brand-primary);
+    border-color: var(--brand-primary);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--brand-primary);
+    border-color: var(--brand-primary);
+    color: white;
+}
+
+/* Alert Styles */
+.alert-primary {
+    background-color: rgba(0, 168, 206, 0.1);
+    border-color: var(--brand-primary);
+    color: var(--brand-dark);
+}
+
+.alert-secondary {
+    background-color: rgba(255, 166, 41, 0.1);
+    border-color: var(--brand-secondary);
+    color: var(--brand-dark);
+}
+
+/* Card Styles */
+.card {
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.card-header {
+    background-color: var(--brand-light);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    font-weight: 600;
+}
+
+/* Table Styles */
+.table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.table th {
+    background-color: var(--brand-primary);
+    color: white;
+    border: none;
+    padding: 12px 15px;
+    font-weight: 600;
+}
+
+.table td {
+    padding: 12px 15px;
+    vertical-align: middle;
+    border-color: #dee2e6;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 168, 206, 0.05);
+}
+
+/* Form Styles */
+.form-control:focus {
+    border-color: var(--brand-primary);
+    box-shadow: 0 0 0 0.2rem rgba(0, 168, 206, 0.25);
+}
+
+.form-label {
+    font-weight: 500;
+    color: var(--brand-dark);
+}
+
+/* Badge Styles */
+.badge.bg-primary {
+    background-color: var(--brand-primary) !important;
+}
+
+.badge.bg-secondary {
+    background-color: var(--brand-secondary) !important;
+}
+
+.badge.bg-accent {
+    background-color: var(--brand-accent) !important;
+}
+
+/* Progress Bar */
+.progress {
+    background-color: #e9ecef;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    background-color: var(--brand-primary);
+}
+
+/* Nav Tabs */
+.nav-tabs .nav-link {
+    color: var(--brand-muted);
+    border: none;
+    padding: 10px 20px;
+}
+
+.nav-tabs .nav-link.active {
+    color: var(--brand-primary);
+    border-bottom: 3px solid var(--brand-primary);
+    background-color: transparent;
+}
+
+/* Pagination */
+.page-item.active .page-link {
+    background-color: var(--brand-primary);
+    border-color: var(--brand-primary);
+}
+
+.page-link {
+    color: var(--brand-primary);
+}
+
+.page-link:hover {
+    color: #0097b9;
+}
+
+/* Custom Utilities */
+.border-primary { border-color: var(--brand-primary) !important; }
+.border-secondary { border-color: var(--brand-secondary) !important; }
+.border-accent { border-color: var(--brand-accent) !important; }
+
+.rounded-lg { border-radius: 15px !important; }
+.rounded-xl { border-radius: 20px !important; }
+
+.shadow-sm { box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05) !important; }
+.shadow { box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important; }
+.shadow-lg { box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important; }
+
+/* Dashboard Cards */
+.stat-card {
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    border: none;
+    overflow: hidden;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.stat-card .card-body {
+    padding: 20px;
+}
+
+.stat-card .stat-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.stat-card .stat-value {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.stat-card .stat-label {
+    font-size: 14px;
+    color: var(--brand-muted);
+    margin: 0;
+}
+
+/* Invoice Styles */
+.invoice-header {
+    background: linear-gradient(135deg, var(--brand-dark) 0%, var(--brand-primary) 100%);
+    color: white;
+    padding: 30px;
+    border-radius: 10px 10px 0 0;
+}
+
+.invoice-body {
+    padding: 30px;
+    background-color: white;
+}
+
+.invoice-footer {
+    background-color: var(--brand-light);
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+    border-top: 1px solid #dee2e6;
+}
+
+/* Print Styles */
+@media print {
+    .no-print {
+        display: none !important;
+    }
+    
+    .invoice-container {
+        box-shadow: none !important;
+        border: 1px solid #dee2e6;
+    }
+}
