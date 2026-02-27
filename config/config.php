@@ -4,7 +4,7 @@ session_start();
 ob_start();
 
 // Base URL configuration
-define('BASE_URL', 'http://localhost/garage_management_system/');
+define('BASE_URL', 'https://garagemaster.sericsoft.com/');
 define('SITE_NAME', 'Garage Master');
 
 // Security settings

@@ -93,8 +93,14 @@ if (!isset($page_title)) {
                 <?php echo BRAND_NAME; ?>
             </a>
             
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <!-- Mobile Sidebar Toggle -->
+            <button class="navbar-toggler me-auto ms-2 border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu">
                 <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Mobile Profile Menu Toggle -->
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fas fa-ellipsis-v text-white"></i>
             </button>
             
             <div class="collapse navbar-collapse" id="navbarNav">

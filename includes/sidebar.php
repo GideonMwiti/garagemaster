@@ -6,9 +6,14 @@ if (!isset($current_page)) {
 
 $role = $_SESSION['role'] ?? '';
 ?>
-<div class="col-md-3 col-lg-2 sidebar d-md-block d-none">
-    <div class="position-sticky pt-3">
-        <ul class="nav flex-column">
+<!-- Desktop Sidebar / Mobile Offcanvas -->
+<div class="col-md-3 col-lg-2 sidebar offcanvas-md offcanvas-start d-md-block" tabindex="-1" id="sidebarMenu" aria-labelledby="sidebarMenuLabel">
+    <div class="offcanvas-header d-md-none bg-dark text-white">
+        <h5 class="offcanvas-title" id="sidebarMenuLabel">Menu</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" data-bs-target="#sidebarMenu" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body d-md-flex flex-column p-0 pt-md-3">
+        <ul class="nav flex-column w-100">
             <!-- Dashboard -->
             <li class="nav-item">
                 <a class="nav-link <?php echo $current_page == 'dashboard' ? 'active' : ''; ?>" 
